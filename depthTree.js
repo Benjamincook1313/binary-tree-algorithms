@@ -46,7 +46,7 @@ const depthFirstValues = (root) => {
 const depthFirstValues = (root) => {
   if(root === null) return []
   const left = depthFirstValues(root.left)  // b d
-  const right = depthFirstValues(root.right)   // c e f
+  const right = depthFirstValues(root.right) // c e f
   return [root.val, ...left, ...right]
 };
 
